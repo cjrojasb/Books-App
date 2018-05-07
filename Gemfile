@@ -9,6 +9,7 @@ end
 gem 'rails', '~> 5.0.1'
 # Use Devise for authentication of users
 gem 'devise'
+gem 'cancancan'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
