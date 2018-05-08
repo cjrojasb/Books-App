@@ -1,6 +1,7 @@
-<h1>Editing Book</h1>
-
-<%= render 'form', book: @book %>
-
-<%= link_to 'Show', @book %> |
-<%= link_to 'Back', books_path %>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <h2 class="text-center">Editar Libro</h2>
+    <%= render 'form', book: @book %>
+    <%= link_to 'Volver', books_path, class: 'btn btn-default' %>
+  </div>
+</div>

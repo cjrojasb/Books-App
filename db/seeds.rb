@@ -27,4 +27,4 @@ Book.create!(title: 'Spiderman', editorial: 'Marvel', remote_photo_url: 'http://
 Book.create!(title: 'Wonder Woman', editorial: 'Marvel', remote_photo_url: 'https://images-na.ssl-images-amazon.com/images/I/51h%2B95W5QuL._SX331_BO1,204,203,200_.jpg', user: u2)
 Book.create!(title: 'Thanos', editorial: 'Avengers', remote_photo_url: 'http://bloody-disgusting.com/wp-content/uploads/2014/09/thanos-the-infinity-revelation-ogn-cover-103834.jpg', user: u2)
 Book.create!(title: 'Dr. Strange', editorial: 'Avengers', remote_photo_url: 'https://images-na.ssl-images-amazon.com/images/I/519q15t4AxL._SX335_BO1,204,203,200_.jpg', user: u2)
-Book.create!(title: 'GUardianes de la Galaxia', editorial: 'Avengers', remote_photo_url: 'https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/58c1ec7fe6f2e14660ce35f5/1489104043194/?format=750w', user: u2)
+Book.create!(title: 'Guardianes de la Galaxia', editorial: 'Avengers', remote_photo_url: 'https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/58c1ec7fe6f2e14660ce35f5/1489104043194/?format=750w', user: u2)

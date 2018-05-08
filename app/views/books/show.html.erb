@@ -31,7 +31,16 @@
         </div>
       </div>
     </div>
-    <%= link_to 'Volver', books_path, class: 'btn btn-link btn-books' %>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <%= link_to "Libro Anterior", @book.prev_book %>
+      </div>
+      <div class="col-md-4 text-center">
+        <%= link_to 'Volver', books_path, class: 'btn btn-default' %>
+      </div>
+      <div class="col-md-4 text-center">
+        <%= link_to "Próximo Libro", @book.next_book %>
+      </div>
   </div>
 </div>
 

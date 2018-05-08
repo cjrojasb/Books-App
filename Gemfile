@@ -9,6 +9,9 @@ end
 gem 'rails', '~> 5.0.1'
 # Use Devise for authentication of users
 gem 'devise'
+# Use Devise-Bootstrap-Views for the design of devise views
+gem 'devise-bootstrap-views'
+# Use CanCanCan for authorization of users
 gem 'cancancan'
 # Use CarrierWave for upload files to project
 gem 'carrierwave'
