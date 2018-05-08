@@ -5,5 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   has_many :books
 
-  enum role: {author: 1}
+  enum role: {author: 1, guest:2}
 end
