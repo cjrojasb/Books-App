@@ -1,0 +1,28 @@
+<h1 class="text-center">Libros</h1>
+<hr>
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <div class="row">
+      <% @books.each do |book| %>
+        <div class="col-md-3">
+          <div class="thumbnail thumbnail-index">           
+            <%= link_to (image_tag(book.photo, class: 'img-responsive img-book-index')), book  %>
+            <div class="caption">
+              <h4 class="text-center"><%= book.title %></h4>
+              <div class="row">         
+                <div class="col-md-8">
+                  <%= book.editorial %>
+                </div>
+                <div class="col-md-4">
+                  <%= link_to 'Show', book %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'New Book', new_book_path %>

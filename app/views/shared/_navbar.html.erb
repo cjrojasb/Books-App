@@ -16,7 +16,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="<%= root_path %>">Inicio</a></li>
+        <li><a href="<%= root_path %>">Todos los Libros</a></li>
+        <% if user_signed_in? %>
+          <li><a href="<%= my_books_books_path %>">Mis Libros</a></li>
+        <% end %>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
