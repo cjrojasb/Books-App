@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version: 2.3.4
 
-Things you may want to cover:
+Rails version: 5.0.1
 
-* Ruby version
+--------------------
 
-* System dependencies
+Getting Started
 
-* Configuration
+1. Clone the repository on your computer with git clone git@github.com:cjrojasb/Books-App.git
 
-* Database creation
+2. Executar bundle install
 
-* Database initialization
+3. Create database with command rails db:create
 
-* How to run the test suite
+4. Run migrations with command rails db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
+5. Run the file seed with command rails db:seed
 
-* Deployment instructions
-
-* ...
+6. Finnaly execute rails server to run the server
