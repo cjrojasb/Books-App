@@ -8,9 +8,9 @@ Rails version: 5.0.1
 
 Getting Started
 
-1. Clone the repository on your computer with git clone git@github.com:cjrojasb/Books-App.git
+1. Clone the repository on your computer with git clone git@github.com:cjrojasb/Books-App.
 
-2. Executar bundle install
+2. Execute bundle install
 
 3. Create database with command rails db:create
 
