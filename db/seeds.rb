@@ -11,10 +11,11 @@
 Book.destroy_all
 User.destroy_all
 
+# Creating users with author role
 u1 = User.create!(name: 'Author 1', email: 'author1@books.cl', password: 'author', password_confirmation: 'author')
 u2 = User.create!(name: 'Author 2', email: 'author2@books.cl', password: 'author', password_confirmation: 'author')
 
-
+# Create books with an associated author
 Book.create!(title: 'El Rey León', editorial: 'Disney', remote_photo_url: 'https://http2.mlstatic.com/el-rey-leon-libro-disney-nuevo-D_NQ_NP_407421-MLC20793210859_062016-F.jpg', user: u1)
 Book.create!(title: 'Capitán América', editorial: 'Marvel', remote_photo_url: 'http://4.bp.blogspot.com/-3-vTV-NXtW0/TjB4COtxyuI/AAAAAAAAAc4/EoqnwXmIvig/s1600/CAP_AMR_ARG_cvr_WEB.jpg', user: u1)
 Book.create!(title: 'Thor', editorial: 'Marvel', remote_photo_url: 'https://imagessl8.casadellibro.com/a/l/t0/78/9788415343578.jpg', user: u1)

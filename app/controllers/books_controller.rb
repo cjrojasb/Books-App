@@ -62,6 +62,7 @@ class BooksController < ApplicationController
     end
   end
 
+  # Method to show the books of a specific author
   def my_books
     @books = current_user.books
   end

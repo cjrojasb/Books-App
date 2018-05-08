@@ -14,7 +14,7 @@
             </div>
             <div class="show-group">
               <strong>Author:</strong>
-              <%= @book.user.name %>
+              <%= @book.user.name unless @book.user.nil? %>
             </div>
             <% if can? :manage, @book %>
               <hr class="separator">
@@ -36,7 +36,11 @@
         <%= link_to "Libro Anterior", @book.prev_book %>
       </div>
       <div class="col-md-4 text-center">
-        <%= link_to 'Volver', books_path, class: 'btn btn-default' %>
+        <% if @book.user == current_user %>
+          <%= link_to 'Volver', my_books_books_path, class: 'btn btn-default' %>
+        <% else %>     
+          <%= link_to 'Volver', books_path, class: 'btn btn-default' %>
+        <% end %>
       </div>
       <div class="col-md-4 text-center">
         <%= link_to "Próximo Libro", @book.next_book %>

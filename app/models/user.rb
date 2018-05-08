@@ -4,6 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   has_many :books
-
-  enum role: {author: 1, guest:2}
+  
+  enum role: {author: 1, guest:2} # Roles for authorization of CanCanCan
 end

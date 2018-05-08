@@ -12,13 +12,9 @@ Getting Started
 
 2. Execute bundle install
 
-3. Create database with command rails db:create
+3. Create database, execute migrations and run the file seed with command rails db:setup
 
-4. Run migrations with command rails db:migrate
-
-5. Run the file seed with command rails db:seed
-
-6. Finnaly execute rails server to run the server
+4. Finnaly execute rails server to run the server
 
 * You can login as an author using the following email and password:
   - E-mail: author1@books.cl
