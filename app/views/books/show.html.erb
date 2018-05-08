@@ -4,32 +4,36 @@
       <%= image_tag(@book.photo, class: 'img-responsive img-book') %>
       <div class="caption">
         <div class="row">
-          <div class="col-md-7">
+          <div class="col-md-12">
             <div class="show-group">
-              <strong>Title:</strong>
-              <%= @book.title %>
+              <h4 class="text-center"><b><%= @book.title %></b></h4>
             </div>
             <div class="show-group">
               <strong>Editorial:</strong>
               <%= @book.editorial %>
             </div>
-          </div>
-          <div class="col-md-5">
+            <div class="show-group">
+              <strong>Author:</strong>
+              <%= @book.user.name %>
+            </div>
             <% if can? :manage, @book %>
-              <%= link_to 'Edit', edit_book_path(@book), class: 'btn btn-info btn-books' %>
+              <hr class="separator">
             <% end %>
-            <br>
-            <br>
-            <%= link_to 'Back', books_path, class: 'btn btn-warning btn-books' %>
           </div>
+          <% if can? :manage, @book %>
+            <div class="col-md-9">
+              <p><i>Has click si deseas editar tú libro</i></p>
+              <%= link_to edit_book_path(@book), class: 'btn btn-warning btn-sm po-left' do  %>
+                <span class="glyphicon glyphicon-edit"></span>
+              <% end %>
+            </div>
+          <% end %>
         </div>
       </div>
     </div>
+    <%= link_to 'Volver', books_path, class: 'btn btn-link btn-books' %>
   </div>
 </div>
 
 <p id="notice"><%= notice %></p>
-
-<% if can? :create, Book %>
-  <%= link_to 'New Book', new_book_path %>
-<% end %>
+    
