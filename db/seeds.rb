@@ -11,8 +11,8 @@
 Book.destroy_all
 User.destroy_all
 
-u1 = User.create!(name: 'Autor 1', email: 'autor1@libros.cl', password: 'author', password_confirmation: 'author')
-u2 = User.create!(name: 'Autor 2', email: 'autor2@libros.cl', password: 'author', password_confirmation: 'author')
+u1 = User.create!(name: 'Author 1', email: 'author1@books.cl', password: 'author', password_confirmation: 'author')
+u2 = User.create!(name: 'Author 2', email: 'author2@books.cl', password: 'author', password_confirmation: 'author')
 
 
 Book.create!(title: 'El Rey León', editorial: 'Disney', remote_photo_url: 'https://http2.mlstatic.com/el-rey-leon-libro-disney-nuevo-D_NQ_NP_407421-MLC20793210859_062016-F.jpg', user: u1)

@@ -19,3 +19,7 @@ Getting Started
 5. Run the file seed with command rails db:seed
 
 6. Finnaly execute rails server to run the server
+
+* You can login as an author using the following email and password:
+  - E-mail: author1@books.cl
+  - Password: author
